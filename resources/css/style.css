@@ -1,0 +1,412 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;  
+  background: white;
+
+}
+
+
+.main-Container {
+  padding: 20px 70px 10px 50px;
+  height: auto;
+  background-color: white;
+}
+
+.content {
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr  2fr ;
+  align-content: center;
+  background-color: white;
+
+}
+
+
+.main-Container1 {
+  padding: 0px 70px 0px 50px;
+  background-color: #00d7b1;
+
+  height: auto;
+
+}
+
+.desktop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+
+.desktop ul li {
+
+  color: aqua;
+  display: inline;
+
+}
+.desktop ul li a {
+  color: black;
+  padding: 10px 20px;
+  font-size: 1.0rem;
+  border-radius: 50px;
+  font-weight: 400;
+}
+.desktop ul li a:hover{
+  color: white;
+  background-color: aqua;;
+}
+.hero-Section{
+  min-height: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+
+  
+}
+.hero-Section1{
+  min-height: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  grid-gap: 20px;
+ 
+
+  
+}
+.NameStyles{
+color: rgb(108, 117, 125);
+line-height: -10px;
+font-size: 1.2rem;
+font-weight: bold;
+}
+.hero-SectionMain{
+  justify-self: center;
+  align-self: center;
+
+}
+.hero-SectionMain1{
+ padding-top: 20px;
+}
+
+.submain{
+  justify-self: center;
+  align-self: center;
+
+
+
+}
+.submain img{
+  width: 100%;
+  height: 100%;
+}
+.htmlImage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  
+}
+
+.htmlImage img{
+  width: 60%;
+  height:60%; 
+
+  border-radius: 50%;
+
+}
+.heroSectionHeading{
+  font-family: "Rubik", sans-serif;
+  font-size: 2.25rem;
+  color: white;
+}
+.heroSectionpara{
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: white;
+  margin-top: 0.1rem;
+}
+.btn{
+   border:1px skyblue solid;
+  padding: 10px 30px;
+  background: white;
+  border-radius: 20px;
+  margin-top: 0.7rem;
+}
+.btn a{
+  font-size: 1rem;
+  font-weight: 300;
+  color: skyblue;
+}
+.aboutsUS{
+     justify-items: center;
+  
+}
+.AboutImage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+
+}
+.AboutImage img{
+   width: 100%;
+   height: 340px;
+   border-radius: 10px;
+   
+   
+   
+}
+.webText{
+  color: black;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.webTextpara{
+  color: rgb(108, 117, 125);
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+.Service{
+  font-family: "Rubik", sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 1.80rem;
+  color: #00e5b5;
+}
+.OurService{
+ 
+  min-height: 600px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  /* background-color: blue; */
+  /* align-content: center; */
+  
+}
+.OurServiceCart{
+  background: rgb(250, 245, 245);
+  border-radius:0px 40px 0px 0px ;
+  padding: 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.image-container img {
+  margin-bottom: 0.8rem;
+  max-width: 100%;
+}
+.OurServiceCart h1{
+  font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.8rem;
+}
+.quote{
+  text-align:center;
+  color: rgb(131, 122, 122);
+}
+
+
+.ourIndustries{
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  grid-gap: 20px;
+  /* background-color: aqua; */
+  /* align-content: center; */
+  
+}
+.OurIndustriesCart{
+  background: rgb(250, 245, 245);
+  border-radius:0px 40px 0px 0px ;
+  padding: 50px 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-self: center;
+  align-self: center;
+  /* height: 100px; */
+
+}
+.image-container1 img{
+   width: 100%;
+   height: 100%;
+}
+
+#bg{
+  background-image: url('../images/bg.png');
+  height: 36.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* margin-top: 20px; */
+}
+.main{
+  min-height: 36.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2rem;
+  margin: 0px 0px 30px 50px;
+  align-items: center;
+  /* background-color: black; */
+  /* padding-top: 80px; */
+  /* background: #000; */
+}
+article h1{
+  font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: white;
+}
+article p{
+  font-family: "Rubik", sans-serif;
+  font-size: .80rem;
+  /* font-weight: 800; */
+  color: white;
+ 
+}
+.img{
+ 
+  margin:  80px 40px;
+}
+.img img{
+  height: 100%;
+  width: 100%;
+  margin-top: 3rem;
+  
+}
+
+
+@media only screen and (max-width: 895px) {
+  .main-Container {
+    padding: 10px 20px 10px 20px;
+  }
+  
+  .desktop ul li a {
+    padding: 0px 10px 0px 0px;
+    font-size: 1.0rem;
+    font-weight: 100;
+  }
+  .OurService{
+ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  
+  }
+  .ourIndustries{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-gap: 20px;
+    /* align-content: center; */
+    
+  }
+  
+}
+.profile{
+  display: flex;
+ 
+  align-items: center;
+  
+}
+.left{
+margin-left: 10px;
+margin-top: -10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .main-Container {
+    padding: 10px 20px 10px 20px;
+    
+  }
+
+  
+  .desktop ul li a {
+    padding: 0px 10px 0px 0px;
+    font-size: 1.0rem;
+    font-weight: 100;
+  }
+  .content {
+    height: auto;
+    display: block;
+   
+  
+  }
+  .submain {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    
+  }
+  .submain img{
+    width: 60%;
+    height: 60%;
+    
+  }
+  .hero-Section{
+    min-height: 200px;
+    display: block;
+    
+
+  }
+  .htmlImage img{
+    width: 100%;
+    height: 100%; 
+    padding: 30px 30px;
+  }
+  .hero-SectionMain{
+    
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  flex-direction: column;
+  
+  }
+  .OurService{
+ 
+    display: grid;
+    grid-template-columns: 1fr;
+   
+    grid-gap: 20px;
+  
+  
+    
+  }
+  .ourIndustries{
+    display: grid;
+    grid-template-columns: 1fr ;
+    
+    grid-gap: 20px;
+  
+    
+  }
+  .main{
+   
+    display: block;
+    margin: 0px 0px 30px 60px;
+    
+ 
+  }
+  .htmlImage img{
+    width: 300px;
+    height:300px; 
+  
+    border-radius: 50%;
+  
+  }
+ 
+
+  
+
+}
