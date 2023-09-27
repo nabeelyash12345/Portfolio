@@ -35,16 +35,83 @@ let message = "hello";
 //   let remove=arr.splice(1,1,'let')
 //   console.log(remove)
    
-let object1 = { a: 'apple', b: 'ball' };
-let object2 = { c: 'cow', d: 'dog' };
+// let object1 = { a: 'apple', b: 'ball' };
+// let object2 = { c: 'cow', d: 'dog' };
 
-function mergeObjects(obj1, obj2) {
-  return { ...obj1, ...obj2 };
+// function mergeObjects(obj1, obj2) {
+//   return { ...obj1, ...obj2 };
+// }
+
+
+// let mergedResult = mergeObjects(object1, object2);
+
+// console.log(mergedResult);
+
+
+const cartData = [
+    {
+        title: 'Product Design',
+        imageSrc: './resources/images/mb.png',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...',
+    },
+    {
+        title: 'Mobile App Development',
+        imageSrc: './resources/images/mb.png',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...',
+    },
+    {
+        title: 'Web Design',
+        imageSrc: './resources/images/mb.png',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...',
+    },
+    {
+        title: 'Apps Design',
+        imageSrc: './resources/images/mb.png',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...',
+    },
+    {
+        title: 'Apps Design',
+        imageSrc: './resources/images/mb.png',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...',
+    }, {
+        title: 'Apps Design',
+        imageSrc: './resources/images/mb.png',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem... Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iure autem...',
+    },
+];
+
+function createCartItem(cartItem) {
+    
+    const cartContainer = document.createElement('div');
+    cartContainer.classList.add('cart-item');
+    cartContainer.classList.add('flex-container'); 
+
+    const image = document.createElement('img');
+    image.src = cartItem.imageSrc;
+
+    const title = document.createElement('h1');
+    title.textContent = cartItem.title;
+
+    const description = document.createElement('p');
+    description.textContent = cartItem.description;
+
+    cartContainer.appendChild(image);
+    cartContainer.appendChild(title);
+    cartContainer.appendChild(description);
+
+    return cartContainer;
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const cartContainer = document.getElementById('cartContainer');
 
-let mergedResult = mergeObjects(object1, object2);
+    cartData.forEach(cartItem => {
+        const cartElement = createCartItem(cartItem);
+        cartContainer.appendChild(cartElement);
+    });
+});
 
-console.log(mergedResult);
+
+
 
 
